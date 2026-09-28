@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Selected engineering, computing, and research projects by Rebecca Dworkin."
+    >
+
+    <title>Projects | Rebecca Dworkin</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         NAVIGATION
+    ========================================== -->
+
+    <nav class="site-nav">
+
+        <a class="nav-name" href="index.html">
+            RD
+        </a>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="#projects">
+                Projects
+            </a>
+
+            <a
+                href="Dworkin_Rebecca_2026.pdf"
+                target="_blank"
+            >
+                Resume
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================================
+         PAGE HEADER
+    ========================================== -->
+
+    <header class="hero" id="top">
+
+        <p class="hero-label">
+            Selected Work
+        </p>
+
+        <h1>
+            Projects
+        </h1>
+
+        <p class="hero-description">
+            A collection of engineering, computing,
+            design, and research work from my time
+            at Georgia Tech.
+        </p>
+
+        <div class="hero-links">
+
+            <a href="index.html">
+                ← Back home
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- =========================================
+             PROJECTS
+        ========================================== -->
+
+        <section id="projects">
+
+            <div class="section-heading">
+
+                <p class="section-number">
+                    01
+                </p>
+
+                <h2>
+                    All Projects
+                </h2>
+
+            </div>
+
+
+            <div class="project-list">
+
+
+                <!-- =================================
+                     01 — TURBOFAN
+                ================================== -->
+
+                <article class="project">
+
+                    <div class="project-number">
+                        01
+                    </div>
+
+                    <div class="project-main">
+
+                        <h3>
+                            Afterburning Turbofan Cycle Optimization
+                        </h3>
+
+                        <p>
+                            Developed and optimized a medium-bypass
+                            afterburning turbofan cycle in MATLAB,
+                            tuning fan and compressor pressure ratios,
+                            bypass ratio, and burner temperatures to
+                            satisfy mission-level performance
+                            requirements.
+                        </p>
+
+                        <div class="project-links">
+
+                            <a
+                                href="turbofan-cycle-report.pdf"
+                                target="_blank"
+                            >
+                                View report ↗
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-tools">
+                        MATLAB<br>
+                        Propulsion
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================
+                     02 — FLIGHT TEST
+                ================================== -->
+
+                <article class="project">
+
+                    <div class="project-number">
+                        02
+                    </div>
+
+                    <div class="project-main">
+
+                        <h3>
+                            Cessna 182 Flight Test & Performance Analysis
+                        </h3>
+
+                        <p>
+                            Conducted a general aviation flight test,
+                            collected in-flight data, and performed
+                            post-flight data reduction and analysis
+                            to evaluate climb, cruise, and aircraft
+                            performance.
+                        </p>
+
+                        <div class="project-links">
+
+                            <a
+                                href="flight-test-report.pdf"
+                                target="_blank"
+                            >
+                                View report ↗
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-tools">
+                        Flight Test<br>
+                        Data Analysis
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================
+                     03 — SERVO CONTROLS
+                ================================== -->
+
+                <article class="project">
+
+                    <div class="project-number">
+                        03
+                    </div>
+
+                    <div class="project-main">
+
+                        <h3>
+                            Servo Control System
+                        </h3>
+
+                        <p>
+                            Developed and tuned a closed-loop control
+                            system using MATLAB/Simulink and physical
+                            hardware to meet specified dynamic-response
+                            requirements.
+                        </p>
+
+                        <div class="project-links">
+
+                            <a
+                                href="servo-control-report.pdf"
+                                target="_blank"
+                            >
+                                View report ↗
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-tools">
+                        Controls<br>
+                        MATLAB / Simulink
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================
+                     04 — MACHINE LEARNING
+                ================================== -->
+
+                <article class="project">
+
+                    <div class="project-number">
+                        04
+                    </div>
+
+                    <div class="project-main">
+
+                        <h3>
+                            Chord Progression Prediction
+                        </h3>
+
+                        <p>
+                            Team machine-learning project exploring
+                            whether a song's first chorus progression
+                            could be predicted from earlier chord
+                            sequences and metadata using clustering
+                            and classification approaches.
+                        </p>
+
+                        <p class="project-contribution">
+                            Contributed to project documentation,
+                            evaluation planning, and the final
+                            technical report.
+                        </p>
+
+                        <!--
+                        Add your report or GitHub link here later.
+
+                        Example:
+
+                        <div class="project-links">
+                            <a
+                                href="YOUR-LINK-HERE"
+                                target="_blank"
+                            >
+                                View project ↗
+                            </a>
+                        </div>
+                        -->
+
+                    </div>
+
+                    <div class="project-tools">
+                        Machine Learning<br>
+                        Music + Data
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================
+                     05 — COGNITIVE SCIENCE
+                ================================== -->
+
+                <article class="project">
+
+                    <div class="project-number">
+                        05
+                    </div>
+
+                    <div class="project-main">
+
+                        <h3>
+                            Emotion, Rationality & Human Cognition
+                        </h3>
+
+                        <p>
+                            Explored whether emotions make people
+                            less rational or are actually necessary
+                            for good decision-making. The paper draws
+                            from neuroscience, psychology, behavioral
+                            economics, and cognitive science to compare
+                            competing views and argues that emotion and
+                            cognition work together rather than acting
+                            as opposites.
+                        </p>
+
+                        <div class="project-links">
+
+                            <a
+                                href="emotion-cognition-paper.pdf"
+                                target="_blank"
+                            >
+                                Read paper ↗
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-tools">
+                        Cognitive Science<br>
+                        Research + Writing
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================
+                     06 — STATIONARY BIKE
+                ================================== -->
+
+                <article class="project">
+
+                    <div class="project-number">
+                        06
+                    </div>
+
+                    <div class="project-main">
+
+                        <h3>
+                            Sustainable Stationary Bike
+                        </h3>
+
+                        <p>
+                            Designed the load-bearing frame and desk
+                            integration for a power-generating
+                            stationary bicycle intended to support
+                            device charging.
+                        </p>
+
+                    </div>
+
+                    <div class="project-tools">
+                        SolidWorks<br>
+                        Mechanical Design
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             CONTACT
+        ========================================== -->
+
+        <section class="contact">
+
+            <p class="eyebrow">
+                Let's connect
+            </p>
+
+            <h2>
+                Always interested in meeting people
+                doing interesting work.
+            </h2>
+
+            <p>
+                I'm graduating in May 2027 and currently
+                exploring full-time engineering opportunities.
+            </p>
+
+            <div class="contact-links">
+
+                <a href="mailto:rdworkin3@gatech.edu">
+                    rdworkin3@gatech.edu ↗
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/rebeccadworkin/"
+                    target="_blank"
+                >
+                    LinkedIn ↗
+                </a>
+
+                <a href="index.html">
+                    Home ↗
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        <p>
+            Rebecca Dworkin
+        </p>
+
+        <p>
+            Aerospace Engineering · Georgia Tech
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
