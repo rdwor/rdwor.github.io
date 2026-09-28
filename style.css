@@ -693,30 +693,62 @@ section {
     font-style: italic;
 }
 .view-all-projects {
-    margin-top: 35px;
+    margin-top: 28px;
 
-    display: flex;
-    justify-content: flex-end;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
 }
 
 
 .view-all-projects a {
-    padding-bottom: 4px;
+    display: flex;
 
-    border-bottom:
-        1px solid var(--text);
+    align-items: center;
+    justify-content: space-between;
 
-    font-size: 14px;
+    width: 100%;
+
+    padding: 22px 0;
+
+    color: var(--text);
+
+    font-size: 15px;
+
+    border-bottom: none;
 
     transition:
+        padding-left 0.2s ease,
         opacity 0.2s ease;
 }
 
 
 .view-all-projects a:hover {
-    opacity: 0.5;
+    padding-left: 8px;
+
+    opacity: 0.65;
 }
 
+
+.view-all-projects a::before {
+    content: "More projects";
+}
+
+
+.view-all-projects a::after {
+    content: "View all →";
+}
+
+
+/* Hide the original link text */
+.view-all-projects a {
+    font-size: 0;
+}
+
+
+.view-all-projects a::before,
+.view-all-projects a::after {
+    font-size: 15px;
+}
 
 
 /* =========================================
