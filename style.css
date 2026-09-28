@@ -3,27 +3,21 @@
    MINIMAL ENGINEERING PORTFOLIO
 ========================================= */
 
-
 :root {
-
     --background: #f5f4ef;
     --text: #17191c;
     --secondary: #55585d;
     --faint: #969791;
     --line: #d6d4cc;
-
     --accent: #98792f;
 
     --max-width: 1280px;
-
 }
-
 
 
 /* =========================================
    RESET
 ========================================= */
-
 
 * {
     margin: 0;
@@ -31,16 +25,12 @@
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
 
-
 body {
-
     background: var(--background);
-
     color: var(--text);
 
     font-family:
@@ -53,98 +43,72 @@ body {
         sans-serif;
 
     font-size: 16px;
-
     line-height: 1.6;
 
     -webkit-font-smoothing: antialiased;
-
 }
-
 
 a {
     color: inherit;
     text-decoration: none;
 }
 
-
 strong {
     font-weight: 600;
 }
-
 
 
 /* =========================================
    NAVIGATION
 ========================================= */
 
-
 .site-nav {
-
     width: min(
         var(--max-width),
         calc(100% - 80px)
     );
 
     height: 86px;
-
     margin: 0 auto;
 
     display: flex;
-
     align-items: center;
     justify-content: space-between;
 
     border-bottom: 1px solid var(--line);
-
 }
-
 
 .nav-name {
-
     font-size: 13px;
-
     font-weight: 700;
-
     letter-spacing: 0.14em;
-
 }
-
 
 .nav-links {
-
     display: flex;
-
+    align-items: center;
     gap: 30px;
-
 }
 
-
 .nav-links a {
-
     color: var(--secondary);
-
     font-size: 14px;
 
     transition:
         color 0.2s ease,
         opacity 0.2s ease;
-
 }
-
 
 .nav-links a:hover {
     color: var(--text);
 }
 
 
-
 /* =========================================
    HERO
 ========================================= */
 
-
 .hero {
-
     width: min(
         var(--max-width),
         calc(100% - 80px)
@@ -156,37 +120,21 @@ strong {
         115px
         0
         105px;
-
 }
 
-
 .hero-label {
-
     margin-bottom: 25px;
 
     color: var(--accent);
 
     font-size: 12px;
-
     font-weight: 600;
 
     letter-spacing: 0.13em;
-
     text-transform: uppercase;
-
 }
 
-
-/*
-   NAME
-
-   One line on desktop.
-   Large enough to command the page,
-   but not oversized.
-*/
-
 .hero h1 {
-
     width: 100%;
 
     font-size:
@@ -199,22 +147,12 @@ strong {
     line-height: 0.95;
 
     font-weight: 500;
-
     letter-spacing: -0.065em;
 
     white-space: nowrap;
-
 }
 
-
-/*
-   Hero copy intentionally uses only part
-   of the page width for contrast against
-   the wide name.
-*/
-
 .hero-description {
-
     max-width: 700px;
 
     margin-top: 50px;
@@ -227,29 +165,21 @@ strong {
         );
 
     line-height: 1.45;
-
     letter-spacing: -0.025em;
-
 }
 
-
 .hero-companies {
-
     margin-top: 27px;
 
     color: var(--secondary);
 
     font-size: 15px;
-
 }
 
-
 .hero-meta {
-
     margin-top: 40px;
 
     display: flex;
-
     flex-wrap: wrap;
 
     gap:
@@ -259,27 +189,20 @@ strong {
     color: var(--secondary);
 
     font-size: 14px;
-
 }
 
-
 .hero-links {
-
     margin-top: 28px;
 
     display: flex;
-
     flex-wrap: wrap;
 
     gap:
         15px
         26px;
-
 }
 
-
 .hero-links a {
-
     padding-bottom: 3px;
 
     border-bottom:
@@ -289,53 +212,41 @@ strong {
 
     transition:
         opacity 0.2s ease;
-
 }
-
 
 .hero-links a:hover {
     opacity: 0.5;
 }
 
 
-
 /* =========================================
    MAIN
 ========================================= */
 
-
 main {
-
     width: min(
         var(--max-width),
         calc(100% - 80px)
     );
 
     margin: 0 auto;
-
 }
 
-
 section {
-
     padding:
         100px
         0;
 
     border-top:
         1px solid var(--line);
-
 }
-
 
 
 /* =========================================
    SECTION HEADINGS
 ========================================= */
 
-
 .section-heading {
-
     display: grid;
 
     grid-template-columns:
@@ -343,23 +254,17 @@ section {
         1fr;
 
     margin-bottom: 70px;
-
 }
 
-
 .section-number {
-
     color: var(--faint);
 
     font-size: 12px;
 
     letter-spacing: 0.1em;
-
 }
 
-
 .section-heading h2 {
-
     font-size: 14px;
 
     font-weight: 600;
@@ -367,12 +272,9 @@ section {
     letter-spacing: 0.09em;
 
     text-transform: uppercase;
-
 }
 
-
 .eyebrow {
-
     color: var(--accent);
 
     font-size: 12px;
@@ -382,18 +284,14 @@ section {
     letter-spacing: 0.13em;
 
     text-transform: uppercase;
-
 }
-
 
 
 /* =========================================
    INTRO
 ========================================= */
 
-
 .intro {
-
     display: grid;
 
     grid-template-columns:
@@ -401,12 +299,9 @@ section {
         1fr;
 
     gap: 40px;
-
 }
 
-
 .intro-text {
-
     max-width: 900px;
 
     font-size:
@@ -419,18 +314,14 @@ section {
     line-height: 1.3;
 
     letter-spacing: -0.035em;
-
 }
-
 
 
 /* =========================================
    EXPERIENCE
 ========================================= */
 
-
 .experience-entry {
-
     display: grid;
 
     grid-template-columns:
@@ -445,41 +336,29 @@ section {
 
     border-top:
         1px solid var(--line);
-
 }
 
-
 .experience-entry:first-of-type {
-
     padding-top: 0;
 
     border-top: none;
-
 }
 
-
 .entry-date {
-
     color: #66686d;
 
     font-size: 14px;
-
 }
 
-
 .entry-heading {
-
     display: flex;
 
     justify-content: space-between;
 
     gap: 40px;
-
 }
 
-
 .entry-heading h3 {
-
     font-size:
         clamp(
             27px,
@@ -490,34 +369,25 @@ section {
     font-weight: 500;
 
     letter-spacing: -0.035em;
-
 }
 
-
 .role {
-
     margin-top: 6px;
 
     color: var(--secondary);
 
     font-size: 16px;
-
 }
 
-
 .location {
-
     color: #66686d;
 
     font-size: 14px;
 
     white-space: nowrap;
-
 }
 
-
 .entry-description {
-
     max-width: 780px;
 
     margin-top: 30px;
@@ -527,25 +397,18 @@ section {
     font-size: 18px;
 
     line-height: 1.72;
-
 }
 
-
 .tags {
-
     margin-top: 28px;
 
     display: flex;
-
     flex-wrap: wrap;
 
     gap: 10px;
-
 }
 
-
 .tags span {
-
     padding:
         7px
         13px;
@@ -558,26 +421,19 @@ section {
     color: var(--secondary);
 
     font-size: 12px;
-
 }
-
 
 
 /* =========================================
    PROJECTS
 ========================================= */
 
-
 .project-list {
-
     border-top:
         1px solid var(--line);
-
 }
 
-
 .project {
-
     display: grid;
 
     grid-template-columns:
@@ -596,26 +452,19 @@ section {
 
     transition:
         padding-left 0.2s ease;
-
 }
-
 
 .project:hover {
     padding-left: 10px;
 }
 
-
 .project-number {
-
     color: var(--faint);
 
     font-size: 12px;
-
 }
 
-
 .project-main h3 {
-
     font-size:
         clamp(
             22px,
@@ -626,12 +475,9 @@ section {
     font-weight: 500;
 
     letter-spacing: -0.025em;
-
 }
 
-
 .project-main p {
-
     max-width: 700px;
 
     margin-top: 13px;
@@ -641,12 +487,9 @@ section {
     font-size: 16px;
 
     line-height: 1.7;
-
 }
 
-
 .project-tools {
-
     color: #66686d;
 
     font-size: 14px;
@@ -654,16 +497,19 @@ section {
     line-height: 1.65;
 
     text-align: right;
-
 }
+
+
+/* PROJECT LINKS */
+
 .project-links {
     display: flex;
     flex-wrap: wrap;
+
     gap: 18px;
 
     margin-top: 18px;
 }
-
 
 .project-links a {
     padding-bottom: 3px;
@@ -677,11 +523,9 @@ section {
         opacity 0.2s ease;
 }
 
-
 .project-links a:hover {
     opacity: 0.5;
 }
-
 
 .project-contribution {
     margin-top: 12px;
@@ -692,72 +536,72 @@ section {
 
     font-style: italic;
 }
-.view-all-projects {
-    margin-top: 28px;
-
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-}
 
 
-.view-all-projects a {
+/* =========================================
+   VIEW ALL PROJECTS BUTTON
+========================================= */
+
+.more-projects {
     display: flex;
 
+    justify-content: flex-end;
+
+    margin-top: 32px;
+}
+
+.more-projects a {
+    display: inline-flex;
+
     align-items: center;
-    justify-content: space-between;
 
-    width: 100%;
+    gap: 14px;
 
-    padding: 22px 0;
+    padding:
+        11px
+        18px;
+
+    border:
+        1px solid var(--text);
+
+    border-radius: 100px;
 
     color: var(--text);
 
-    font-size: 15px;
-
-    border-bottom: none;
+    font-size: 14px;
+    font-weight: 500;
 
     transition:
-        padding-left 0.2s ease,
-        opacity 0.2s ease;
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
 }
 
+.more-projects a:hover {
+    background: var(--text);
 
-.view-all-projects a:hover {
-    padding-left: 8px;
+    color: var(--background);
 
-    opacity: 0.65;
+    transform:
+        translateY(-2px);
 }
 
-
-.view-all-projects a::before {
-    content: "More projects";
+.more-projects .arrow {
+    transition:
+        transform 0.2s ease;
 }
 
-
-.view-all-projects a::after {
-    content: "View all →";
-}
-
-
-/* Hide the original link text */
-.view-all-projects a {
-    font-size: 0;
-}
-
-
-.view-all-projects a::before,
-.view-all-projects a::after {
-    font-size: 15px;
+.more-projects a:hover .arrow {
+    transform:
+        translateX(4px);
 }
 
 
 /* =========================================
-   ABOUT
+   HOMEPAGE ABOUT
 ========================================= */
 
-
 .about-grid {
-
     display: grid;
 
     grid-template-columns:
@@ -765,19 +609,13 @@ section {
         0.7fr;
 
     gap: 110px;
-
 }
-
 
 .about-copy {
-
     max-width: 760px;
-
 }
 
-
 .about-copy p {
-
     margin-bottom: 26px;
 
     font-size: 20px;
@@ -785,22 +623,16 @@ section {
     line-height: 1.72;
 
     letter-spacing: -0.015em;
-
 }
 
-
 .education-card {
-
     padding-left: 32px;
 
     border-left:
         1px solid var(--line);
-
 }
 
-
 .small-label {
-
     margin-bottom: 22px;
 
     color: var(--accent);
@@ -812,12 +644,9 @@ section {
     letter-spacing: 0.13em;
 
     text-transform: uppercase;
-
 }
 
-
 .education-card h3 {
-
     margin-bottom: 18px;
 
     font-size: 22px;
@@ -825,44 +654,62 @@ section {
     line-height: 1.35;
 
     font-weight: 500;
-
 }
 
-
 .education-card p {
-
     margin-bottom: 6px;
 
     font-size: 15px;
-
 }
-
 
 .muted {
     color: var(--secondary);
 }
 
 
+/* LEARN MORE ABOUT */
+
+.about-link {
+    margin-top: 28px;
+}
+
+.about-link a {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding-bottom: 4px;
+
+    border-bottom:
+        1px solid var(--text);
+
+    font-size: 14px;
+
+    transition:
+        opacity 0.2s ease;
+}
+
+.about-link a:hover {
+    opacity: 0.5;
+}
+
 
 /* =========================================
    TECHNICAL
 ========================================= */
 
-
 .skills-grid {
-
     display: grid;
 
     grid-template-columns:
         repeat(3, 1fr);
 
     gap: 65px;
-
 }
 
-
 .skill-column h3 {
-
     margin-bottom: 25px;
 
     padding-bottom: 16px;
@@ -873,37 +720,27 @@ section {
     font-size: 14px;
 
     font-weight: 600;
-
 }
 
-
 .skill-column p {
-
     margin-bottom: 11px;
 
     color: #4b4d51;
 
     font-size: 16px;
-
 }
-
 
 
 /* =========================================
    LEADERSHIP
 ========================================= */
 
-
 .leadership-list {
-
     border-top:
         1px solid var(--line);
-
 }
 
-
 .leadership-row {
-
     display: flex;
 
     justify-content: space-between;
@@ -918,47 +755,34 @@ section {
         1px solid var(--line);
 
     font-size: 16px;
-
 }
 
-
 .leadership-row span:last-child {
-
     color: var(--secondary);
 
     text-align: right;
-
 }
 
-
 .additional-involvement {
-
     margin-top: 30px;
 
     color: var(--secondary);
 
     font-size: 14px;
-
 }
-
 
 
 /* =========================================
    CONTACT
 ========================================= */
 
-
 .contact {
-
     padding:
         135px
         0;
-
 }
 
-
 .contact h2 {
-
     max-width: 900px;
 
     margin-top: 22px;
@@ -975,12 +799,9 @@ section {
     font-weight: 500;
 
     letter-spacing: -0.055em;
-
 }
 
-
 .contact > p:not(.eyebrow) {
-
     max-width: 600px;
 
     margin-top: 36px;
@@ -988,43 +809,32 @@ section {
     color: var(--secondary);
 
     font-size: 17px;
-
 }
 
-
 .contact-links {
-
     margin-top: 35px;
 
     display: flex;
-
     flex-wrap: wrap;
 
     gap: 25px;
-
 }
 
-
 .contact-links a {
-
     padding-bottom: 3px;
 
     border-bottom:
         1px solid var(--text);
 
     font-size: 14px;
-
 }
-
 
 
 /* =========================================
    FOOTER
 ========================================= */
 
-
 footer {
-
     width: min(
         var(--max-width),
         calc(100% - 80px)
@@ -1047,15 +857,238 @@ footer {
     color: var(--secondary);
 
     font-size: 12px;
-
 }
 
+
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+.about-hero {
+    padding-top: 105px;
+
+    padding-bottom: 90px;
+}
+
+.about-hero h1 {
+    max-width: 1100px;
+}
+
+
+/* STORY LAYOUT */
+
+.about-story-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.1fr)
+        minmax(320px, 0.9fr);
+
+    gap: 90px;
+
+    align-items: start;
+}
+
+.about-story-copy {
+    max-width: 720px;
+}
+
+.about-story-copy p {
+    margin-bottom: 24px;
+
+    color: #34363a;
+
+    font-size: 19px;
+
+    line-height: 1.75;
+
+    letter-spacing: -0.012em;
+}
+
+
+/* =========================================
+   ABOUT — PROFILE IMAGE
+========================================= */
+
+.about-feature-image {
+    display: flex;
+
+    justify-content: flex-end;
+}
+
+.about-feature-image img {
+    width: 100%;
+
+    max-width: 390px;
+
+    height: 460px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================
+   ABOUT — TWO IMAGE LAYOUT
+========================================= */
+
+.about-image-pair {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+}
+
+.about-image-pair img {
+    width: 100%;
+
+    height: 360px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================
+   ABOUT — TRAVEL GRID
+========================================= */
+
+.about-image-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+}
+
+.about-image-grid img {
+    width: 100%;
+
+    height: 245px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+/* slightly editorial variation */
+
+.about-image-grid img:nth-child(1),
+.about-image-grid img:nth-child(4) {
+    height: 285px;
+}
+
+.about-image-grid img:nth-child(2),
+.about-image-grid img:nth-child(3) {
+    height: 220px;
+}
+
+
+/* =========================================
+   ABOUT — COMMUNITY CARD
+========================================= */
+
+.about-feature-card {
+    padding:
+        30px
+        0
+        30px
+        32px;
+
+    border-left:
+        1px solid var(--line);
+}
+
+.about-feature-card p:not(.small-label) {
+    padding:
+        12px
+        0;
+
+    border-bottom:
+        1px solid var(--line);
+
+    color: var(--secondary);
+
+    font-size: 15px;
+}
+
+.about-feature-card p:last-child {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   ABOUT — CLOSING
+========================================= */
+
+.about-closing {
+    padding:
+        130px
+        0;
+}
+
+.about-closing h2 {
+    max-width: 1000px;
+
+    margin-top: 22px;
+
+    font-size:
+        clamp(
+            38px,
+            4.8vw,
+            68px
+        );
+
+    line-height: 1.08;
+
+    font-weight: 500;
+
+    letter-spacing: -0.045em;
+}
+
+.about-closing > p:not(.eyebrow) {
+    max-width: 760px;
+
+    margin-top: 38px;
+
+    color: var(--secondary);
+
+    font-size: 19px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   IMAGE HOVERS
+========================================= */
+
+.about-feature-image img,
+.about-image-pair img,
+.about-image-grid img {
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.about-feature-image img:hover,
+.about-image-pair img:hover,
+.about-image-grid img:hover {
+    transform:
+        translateY(-3px);
+
+    opacity: 0.94;
+}
 
 
 /* =========================================
    TABLET
 ========================================= */
-
 
 @media (max-width: 900px) {
 
@@ -1063,77 +1096,62 @@ footer {
     .hero,
     main,
     footer {
-
         width:
             calc(100% - 40px);
-
     }
 
 
     .hero h1 {
-
         font-size:
             clamp(
                 52px,
                 11vw,
                 90px
             );
-
     }
 
 
     .intro {
-
         grid-template-columns:
             1fr;
 
         gap: 25px;
-
     }
 
 
     .experience-entry {
-
         grid-template-columns:
             1fr;
 
         gap: 15px;
-
     }
 
 
     .project {
-
         grid-template-columns:
             45px
             1fr;
-
     }
 
 
     .project-tools {
-
         grid-column: 2;
 
         text-align: left;
 
         margin-top: 5px;
-
     }
 
 
     .about-grid {
-
         grid-template-columns:
             1fr;
 
         gap: 55px;
-
     }
 
 
     .education-card {
-
         padding:
             35px
             0
@@ -1143,17 +1161,55 @@ footer {
 
         border-top:
             1px solid var(--line);
+    }
 
+
+    .about-story-grid {
+        grid-template-columns:
+            1fr;
+
+        gap: 50px;
+    }
+
+
+    .about-feature-image {
+        justify-content: flex-start;
+    }
+
+
+    .about-feature-image img {
+        max-width: 420px;
+
+        height: 480px;
+    }
+
+
+    .about-image-pair,
+    .about-image-grid {
+        max-width: 700px;
+    }
+
+
+    .about-feature-card {
+        max-width: 600px;
+
+        padding:
+            30px
+            0
+            0;
+
+        border-left: none;
+
+        border-top:
+            1px solid var(--line);
     }
 
 }
 
 
-
 /* =========================================
    MOBILE
 ========================================= */
-
 
 @media (max-width: 650px) {
 
@@ -1161,39 +1217,46 @@ footer {
     .hero,
     main,
     footer {
-
         width:
             calc(100% - 30px);
+    }
 
+
+    .site-nav {
+        height: auto;
+
+        min-height: 76px;
+
+        padding:
+            18px
+            0;
+
+        gap: 20px;
     }
 
 
     .nav-links {
+        gap: 13px;
 
-        gap: 16px;
+        flex-wrap: wrap;
 
+        justify-content: flex-end;
     }
 
 
-    .nav-links a:nth-child(1),
-    .nav-links a:nth-child(2) {
-
-        display: none;
-
+    .nav-links a {
+        font-size: 12px;
     }
 
 
     .hero {
-
         padding:
             80px
             0;
-
     }
 
 
     .hero h1 {
-
         font-size:
             clamp(
                 46px,
@@ -1204,106 +1267,175 @@ footer {
         white-space: normal;
 
         line-height: 0.95;
-
     }
 
 
     .hero-description {
-
         margin-top: 38px;
 
         font-size: 21px;
-
     }
 
 
     section {
-
         padding:
             72px
             0;
-
     }
 
 
     .section-heading {
-
         grid-template-columns:
             45px
             1fr;
 
         margin-bottom: 50px;
-
     }
 
 
     .entry-heading {
-
         display: block;
-
     }
 
 
     .location {
-
         margin-top: 5px;
-
     }
 
 
     .entry-description {
-
         font-size: 16px;
+    }
 
+
+    .project {
+        grid-template-columns:
+            35px
+            1fr;
+
+        gap: 16px;
+    }
+
+
+    .project-tools {
+        grid-column: 2;
+    }
+
+
+    .more-projects {
+        justify-content: flex-start;
     }
 
 
     .skills-grid {
-
         grid-template-columns:
             1fr;
 
         gap: 45px;
-
     }
 
 
     .leadership-row {
-
         display: block;
-
     }
 
 
     .leadership-row span:last-child {
-
         display: block;
 
         margin-top: 4px;
 
         text-align: left;
-
     }
 
 
     .about-copy p {
-
         font-size: 18px;
+    }
 
+
+    .about-hero {
+        padding-top: 75px;
+
+        padding-bottom: 70px;
+    }
+
+
+    .about-story-copy p {
+        font-size: 17px;
+
+        line-height: 1.7;
+    }
+
+
+    .about-feature-image img {
+        max-width: 100%;
+
+        height: 420px;
+    }
+
+
+    .about-image-pair {
+        grid-template-columns:
+            1fr
+            1fr;
+
+        gap: 8px;
+    }
+
+
+    .about-image-pair img {
+        height: 260px;
+    }
+
+
+    .about-image-grid {
+        grid-template-columns:
+            1fr
+            1fr;
+
+        gap: 8px;
+    }
+
+
+    .about-image-grid img,
+    .about-image-grid img:nth-child(1),
+    .about-image-grid img:nth-child(2),
+    .about-image-grid img:nth-child(3),
+    .about-image-grid img:nth-child(4) {
+        height: 220px;
+    }
+
+
+    .about-closing {
+        padding:
+            90px
+            0;
+    }
+
+
+    .about-closing h2 {
+        font-size:
+            clamp(
+                34px,
+                10vw,
+                48px
+            );
+    }
+
+
+    .about-closing > p:not(.eyebrow) {
+        font-size: 17px;
     }
 
 
     footer {
-
         display: block;
-
     }
 
 
     footer p + p {
-
         margin-top: 5px;
-
     }
 
 }
