@@ -692,6 +692,30 @@ section {
 
     font-style: italic;
 }
+.view-all-projects {
+    margin-top: 35px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.view-all-projects a {
+    padding-bottom: 4px;
+
+    border-bottom:
+        1px solid var(--text);
+
+    font-size: 14px;
+
+    transition:
+        opacity 0.2s ease;
+}
+
+
+.view-all-projects a:hover {
+    opacity: 0.5;
+}
 
 
 
