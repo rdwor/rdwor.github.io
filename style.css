@@ -656,6 +656,42 @@ section {
     text-align: right;
 
 }
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+
+    margin-top: 18px;
+}
+
+
+.project-links a {
+    padding-bottom: 3px;
+
+    border-bottom:
+        1px solid var(--text);
+
+    font-size: 13px;
+
+    transition:
+        opacity 0.2s ease;
+}
+
+
+.project-links a:hover {
+    opacity: 0.5;
+}
+
+
+.project-contribution {
+    margin-top: 12px;
+
+    color: var(--secondary);
+
+    font-size: 14px;
+
+    font-style: italic;
+}
 
 
 
