@@ -598,74 +598,435 @@ section {
 
 
 /* =========================================
-   HOMEPAGE ABOUT
+   ABOUT PAGE
 ========================================= */
 
-.about-grid {
+.about-hero {
+    padding-top: 105px;
+    padding-bottom: 90px;
+}
+
+.about-hero h1 {
+    max-width: 1100px;
+}
+
+
+/* =========================================
+   ABOUT STORY LAYOUT
+========================================= */
+
+.about-story-grid {
     display: grid;
 
     grid-template-columns:
-        1.7fr
-        0.7fr;
+        minmax(0, 1fr)
+        minmax(0, 1fr);
 
-    gap: 110px;
+    gap: 70px;
+
+    align-items: start;
 }
 
-.about-copy {
-    max-width: 760px;
+
+.about-story-copy {
+    min-width: 0;
+    max-width: 650px;
 }
 
-.about-copy p {
-    margin-bottom: 26px;
 
-    font-size: 20px;
+.about-story-copy p {
+    margin-bottom: 24px;
 
-    line-height: 1.72;
+    color: #34363a;
 
-    letter-spacing: -0.015em;
+    font-size: 19px;
+
+    line-height: 1.75;
+
+    letter-spacing: -0.012em;
 }
 
-.education-card {
-    padding-left: 32px;
+
+.about-story-copy p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   PROFILE IMAGE
+========================================= */
+
+.about-feature-image {
+    min-width: 0;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.about-feature-image img {
+    width: min(100%, 360px);
+
+    aspect-ratio: 4 / 5;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================
+   ENGINEERING IMAGES
+========================================= */
+
+.engineering-images {
+    min-width: 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+}
+
+
+.engineering-images img {
+    width: 100%;
+    min-width: 0;
+
+    aspect-ratio: 4 / 5;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================
+   MUSIC IMAGES
+========================================= */
+
+.about-image-pair {
+    min-width: 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+}
+
+
+.about-image-pair img {
+    width: 100%;
+    min-width: 0;
+
+    aspect-ratio: 4 / 5;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================
+   TRAVEL GRID
+========================================= */
+
+.about-image-grid {
+    min-width: 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+}
+
+
+.about-image-grid img {
+    width: 100%;
+    min-width: 0;
+
+    aspect-ratio: 4 / 3;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================
+   SPORTS / TEXT-ONLY SECTION
+========================================= */
+
+.about-text-wide {
+    max-width: 820px;
+
+    margin-left: 80px;
+}
+
+
+.about-text-wide p {
+    margin-bottom: 24px;
+
+    color: #34363a;
+
+    font-size: 19px;
+
+    line-height: 1.75;
+
+    letter-spacing: -0.012em;
+}
+
+
+.about-text-wide p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   COMMUNITY CARD
+========================================= */
+
+.about-feature-card {
+    min-width: 0;
+
+    padding:
+        15px
+        0
+        15px
+        32px;
 
     border-left:
         1px solid var(--line);
 }
 
-.small-label {
-    margin-bottom: 22px;
 
-    color: var(--accent);
+.about-feature-card p:not(.small-label) {
+    padding:
+        13px
+        0;
 
-    font-size: 11px;
+    border-bottom:
+        1px solid var(--line);
 
-    font-weight: 600;
-
-    letter-spacing: 0.13em;
-
-    text-transform: uppercase;
-}
-
-.education-card h3 {
-    margin-bottom: 18px;
-
-    font-size: 22px;
-
-    line-height: 1.35;
-
-    font-weight: 500;
-}
-
-.education-card p {
-    margin-bottom: 6px;
+    color: var(--secondary);
 
     font-size: 15px;
 }
 
-.muted {
-    color: var(--secondary);
+
+.about-feature-card p:last-child {
+    border-bottom: none;
 }
 
+
+/* =========================================
+   ABOUT CLOSING
+========================================= */
+
+.about-closing {
+    padding:
+        130px
+        0;
+}
+
+
+.about-closing h2 {
+    max-width: 1000px;
+
+    margin-top: 22px;
+
+    font-size:
+        clamp(
+            38px,
+            4.8vw,
+            68px
+        );
+
+    line-height: 1.08;
+
+    font-weight: 500;
+
+    letter-spacing: -0.045em;
+}
+
+
+.about-closing > p:not(.eyebrow) {
+    max-width: 760px;
+
+    margin-top: 38px;
+
+    color: var(--secondary);
+
+    font-size: 19px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   IMAGE HOVER
+========================================= */
+
+.about-feature-image img,
+.engineering-images img,
+.about-image-pair img,
+.about-image-grid img {
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+}
+
+
+.about-feature-image img:hover,
+.engineering-images img:hover,
+.about-image-pair img:hover,
+.about-image-grid img:hover {
+    transform:
+        translateY(-3px);
+
+    opacity: 0.95;
+}
+
+
+/* =========================================
+   ABOUT PAGE — TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .about-story-grid {
+        grid-template-columns:
+            1fr;
+
+        gap: 45px;
+    }
+
+
+    .about-story-copy {
+        max-width: 760px;
+    }
+
+
+    .about-feature-image {
+        justify-content: flex-start;
+    }
+
+
+    .about-feature-image img {
+        width: min(100%, 380px);
+    }
+
+
+    .engineering-images,
+    .about-image-pair,
+    .about-image-grid {
+        max-width: 700px;
+    }
+
+
+    .about-text-wide {
+        margin-left: 0;
+
+        max-width: 760px;
+    }
+
+
+    .about-feature-card {
+        max-width: 620px;
+
+        padding:
+            30px
+            0
+            0;
+
+        border-left: none;
+
+        border-top:
+            1px solid var(--line);
+    }
+
+}
+
+
+/* =========================================
+   ABOUT PAGE — MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .about-hero {
+        padding-top: 75px;
+
+        padding-bottom: 70px;
+    }
+
+
+    .about-story-grid {
+        gap: 35px;
+    }
+
+
+    .about-story-copy p,
+    .about-text-wide p {
+        font-size: 17px;
+
+        line-height: 1.7;
+    }
+
+
+    .about-feature-image img {
+        width: min(100%, 340px);
+    }
+
+
+    .engineering-images,
+    .about-image-pair {
+        grid-template-columns:
+            1fr
+            1fr;
+
+        gap: 8px;
+    }
+
+
+    .about-image-grid {
+        grid-template-columns:
+            1fr
+            1fr;
+
+        gap: 8px;
+    }
+
+
+    .about-closing {
+        padding:
+            90px
+            0;
+    }
+
+
+    .about-closing h2 {
+        font-size:
+            clamp(
+                34px,
+                10vw,
+                48px
+            );
+    }
+
+
+    .about-closing > p:not(.eyebrow) {
+        font-size: 17px;
+    }
+
+}
 
 /* LEARN MORE ABOUT */
 
