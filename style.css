@@ -787,6 +787,40 @@ section {
 .about-text-wide p:last-child {
     margin-bottom: 0;
 }
+/* =========================================
+   SPORTS PHOTOS
+========================================= */
+
+.sports-images {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+
+    margin-top: 38px;
+}
+
+
+.sports-images img {
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+@media (max-width: 650px) {
+
+    .sports-images {
+        grid-template-columns: 1fr;
+    }
+
+}
 
 
 /* =========================================
